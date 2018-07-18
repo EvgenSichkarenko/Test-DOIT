@@ -1,0 +1,33 @@
+.main{
+  background-color: #edf0f8;
+  height: 78vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+
+}
+.main-img{
+  background-image: url("it.png");
+  width: 500px;
+  height: 400px;
+  background-size: cover;
+  vertical-align: bottom;
+}
+.main-text{
+  text-align: center;
+  padding-top: 100px;
+  width: 400px;
+  height: 300px;
+}
+footer {
+  background: #a1c3e2;
+  padding: 0;
+  margin: 0;
+  height: 60px;
+  width: 100%;
+}
+.copyright{
+  padding: 19px;
+  font-size: 18px;
+}

@@ -1,0 +1,37 @@
+.main{
+  background: #d6f5f5;
+  width: 100%;
+  height: 87vh;
+}
+.main-text{
+  margin: 0;
+  text-align: center;
+  font-size: 30px;
+  padding: 45px;
+}
+.form-action {
+  margin: 0 auto;
+  width: 340px;
+  height: 280px;
+  border: 2px solid white;
+  border-radius: 5px;
+  background: white;
+}
+input, span, label{
+  font-size: 1.2em;
+  padding: 5px;
+}
+label{
+  display: block;
+  margin: 10px;
+}
+button{
+  background: lightgreen;
+  color: white;
+  width: 305px;
+  height: 40px;
+  cursor: pointer;
+  border: none;
+  margin-left: 14px;
+  border-radius: 10px;
+}

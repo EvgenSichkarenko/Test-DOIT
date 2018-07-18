@@ -1,0 +1,58 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.abText, .map-text{
+  text-align: center;
+  font-size: 25px;
+  font-family: "Arial";
+}
+.main{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main-right{
+  margin-left: 100px;
+  width: 420px;
+  height: 200px;
+  font-size: 25px;
+  font-family: "Calisto MT";
+}
+.main-right b {
+  display: block;
+}
+.main-left{
+  height: 300px;
+  width: 400px;
+  border: 2px solid lightgreen;
+  margin-right: 100px;
+}
+footer {
+  background: #a9c3e2;
+  padding: 0;
+  margin: 0;
+  height: 60px;
+  width: 100%;
+}
+.copyright{
+  padding: 19px;
+  font-size: 18px;
+}
+.map{
+   margin: 0;
+   width: 900px;
+   height: 500px;
+   border: 2px solid coral;
+ }
+agm-map {
+  height: 400px;
+}
+button{
+  width: 150px;
+  height: 20px;
+  margin: 10px;
+}
+
+

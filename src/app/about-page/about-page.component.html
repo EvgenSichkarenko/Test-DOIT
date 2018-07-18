@@ -1,0 +1,61 @@
+<div class="container">
+<div class="abText">
+   <p>About author</p>
+ </div>
+ <div class="main">
+
+   <div class="main-left">
+
+   </div>
+   <div class="main-right">
+         <p>  <b> Hello everyone!</b>
+           My name is Yevhen. I'm 22. I'm studying on the fifth course in the Academy of Food   Technology, Department of Computer engineering. I like to spend free time with friends, reading books, listening to the musiс. I'm quick-learner, responsible person with excellent communication skills.
+         </p>
+   </div>
+
+ </div>
+ <div class="map-text">
+   <p>Map</p>
+ </div>
+
+ <div class="map">
+   <agm-map
+            [zoom]="zom"
+            [latitude]="lat"
+            [longitude]="lng"
+            (mapClick)="onChoseLocation($event)"
+             [zoomControl]="false"
+            [disableDefaultUI]="false"
+     >
+     <agm-marker
+
+
+       *ngFor="let m of marker"
+       [latitude]="m.lat"
+       [longitude]="m.lng" >
+
+     <!--*ngFor="let m of marker"-->
+     <!--[latitude]="lat"-->
+     <!--[longitude]="lng" -->
+
+       <!--(markerClick)="clickedMarker(m)"-->
+
+       <!--[markerDraggable]="m.draggable"-->
+       <!--(dragEnd)="markerDragEnd(m, $event)"-->
+
+       <agm-info-window>
+         {{m.name}}
+       </agm-info-window>
+
+     </agm-marker>
+   </agm-map>
+   <button type="submit" (click)="zoomIn()">Zoom in</button>
+   <button type="button"  (click)="zoomOut()">Zoom out</button>
+ </div>
+
+
+  <footer>
+   <div class="copyright"> © 2018  All Rights Reserved</div>
+ </footer>
+</div>
+
