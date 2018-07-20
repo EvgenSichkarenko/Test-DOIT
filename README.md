@@ -1,4 +1,5 @@
 # TestDOIT
+Впервые пишу на ангуляре, пытался установить 4-ю версию возникли проблемы, поэтому использовал 6, но синтаксис 4-го ангуляра.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
