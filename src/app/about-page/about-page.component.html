@@ -1,14 +1,10 @@
 <div class="container">
 <div class="abText">
-   <p>About author</p>
+   <!--<p>About author</p>-->
  </div>
  <div class="main">
-
-   <div class="main-left">
-
-   </div>
    <div class="main-right">
-         <p>  <b> Hello everyone!</b>
+         <p>  <b> Hi!</b>
            My name is Yevhen. I'm 22. I'm studying on the fifth course in the Academy of Food   Technology, Department of Computer engineering. I like to spend free time with friends, reading books, listening to the musiс. I'm quick-learner, responsible person with excellent communication skills.
          </p>
    </div>
@@ -23,25 +19,13 @@
             [zoom]="zom"
             [latitude]="lat"
             [longitude]="lng"
-            (mapClick)="onChoseLocation($event)"
-             [zoomControl]="false"
-            [disableDefaultUI]="false"
-     >
+            (mapClick)="onChoseLocation($event)" >
+
      <agm-marker
-
-
-       *ngFor="let m of marker"
-       [latitude]="m.lat"
-       [longitude]="m.lng" >
-
-     <!--*ngFor="let m of marker"-->
-     <!--[latitude]="lat"-->
-     <!--[longitude]="lng" -->
-
-       <!--(markerClick)="clickedMarker(m)"-->
-
-       <!--[markerDraggable]="m.draggable"-->
-       <!--(dragEnd)="markerDragEnd(m, $event)"-->
+             *ngFor="let m of marker"
+             [latitude]="m.lat"
+             [longitude]="m.lng"
+             [label]="m.label">
 
        <agm-info-window>
          {{m.name}}
@@ -49,13 +33,29 @@
 
      </agm-marker>
    </agm-map>
-   <button type="submit" (click)="zoomIn()">Zoom in</button>
+
+   <button type="button" (click)="zoomIn()">Zoom in</button>
    <button type="button"  (click)="zoomOut()">Zoom out</button>
+   <button type="submit" (click)="Save()" >Save</button>
+   <button type="button" (click)="Show()">Show </button>
+
+   <ul>
+     <li  (click)="clSchool()">school      </li>
+     <li  (click)="clGas()"   >gasStations </li>
+     <li  (click)="clPhar()"  >pharmacies  </li>
+     <li  (click)="clRest()"  >restaurants </li>
+   </ul>
  </div>
 
+   <!--<select   (change)="clSchool()"  >-->
+     <!--<option id="0">&#45;&#45;select&#45;&#45;</option>-->
+       <!--<option id="1" > school</option>-->
+     <!--<option id="2" > gasStations</option>-->
+     <!--<option id="3" > pharmacies</option>-->
+     <!--<option id="4"> restaurants</option>-->
+   <!--</select>-->
 
   <footer>
    <div class="copyright"> © 2018  All Rights Reserved</div>
  </footer>
 </div>
-

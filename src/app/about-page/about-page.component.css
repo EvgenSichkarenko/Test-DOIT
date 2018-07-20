@@ -7,6 +7,7 @@
   text-align: center;
   font-size: 25px;
   font-family: "Arial";
+  margin: 10px;
 }
 .main{
   display: flex;
@@ -14,21 +15,17 @@
   justify-content: space-between;
 }
 .main-right{
-  margin-left: 100px;
-  width: 420px;
+  width: 620px;
   height: 200px;
   font-size: 25px;
   font-family: "Calisto MT";
 }
 .main-right b {
   display: block;
+  text-align: center;
+  font-size: 30px;
 }
-.main-left{
-  height: 300px;
-  width: 400px;
-  border: 2px solid lightgreen;
-  margin-right: 100px;
-}
+
 footer {
   background: #a9c3e2;
   padding: 0;
@@ -53,6 +50,22 @@ button{
   width: 150px;
   height: 20px;
   margin: 10px;
+  cursor: pointer;
 }
-
-
+ul{
+  list-style: none;
+  margin-right: 90px;
+  float: right;
+  margin-top: -1px;
+}
+ul li{
+  padding: 3px;
+}
+ul li:hover{
+  cursor: pointer;
+  text-align: left;
+  border-bottom: 1px solid black;
+}
+.map-text{
+  margin: 20px;
+}

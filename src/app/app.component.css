@@ -5,6 +5,11 @@ body{
   margin: 0;
   padding: 0;
 }
+.logo{
+  font-size: 27px;
+  font-family: "Imprint MT Shadow" ;
+  color: #ccffff;
+}
 .menu-top{
   display: flex;
   justify-content: space-around;
@@ -24,7 +29,6 @@ ul li a {
   display: flex;
   justify-content: space-around;
   width: 40%;
-
 }
 .menu-link{
   color: #ffffff;
