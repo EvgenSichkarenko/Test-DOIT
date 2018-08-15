@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 import {FormsModule} from '@angular/forms' ;
 import { AgmCoreModule } from '@agm/core';
+import {HttpClientModule} from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
@@ -25,6 +26,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule ,
+    HttpClientModule,
     RouterModule.forRoot(appRoutes),
     FormsModule ,
     AgmCoreModule.forRoot({

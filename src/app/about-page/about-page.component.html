@@ -16,9 +16,10 @@
 
  <div class="map">
    <agm-map
-            [zoom]="zom"
+            [zoom]="zoom"
             [latitude]="lat"
             [longitude]="lng"
+
             (mapClick)="onChoseLocation($event)" >
 
      <agm-marker
@@ -34,16 +35,16 @@
      </agm-marker>
    </agm-map>
 
-   <button type="button" (click)="zoomIn()">Zoom in</button>
-   <button type="button"  (click)="zoomOut()">Zoom out</button>
-   <button type="submit" (click)="Save()" >Save</button>
-   <button type="button" (click)="Show()">Show </button>
+   <button type="button" (click)="zoomin()">Zoom in</button>
+   <button type="button"  (click)="zoomout()">Zoom out</button>
+   <button type="submit" (click)="save()" >Save</button>
+   <button type="button" (click)="show()">Show </button>
 
    <ul>
-     <li  (click)="clSchool()">school      </li>
-     <li  (click)="clGas()"   >gasStations </li>
-     <li  (click)="clPhar()"  >pharmacies  </li>
-     <li  (click)="clRest()"  >restaurants </li>
+     <li  (click)="clschool()">school      </li>
+     <li  (click)="clgas()"   >gasStations </li>
+     <li  (click)="clphar()"  >pharmacies  </li>
+     <li  (click)="clrest()"  >restaurants </li>
    </ul>
  </div>
 
